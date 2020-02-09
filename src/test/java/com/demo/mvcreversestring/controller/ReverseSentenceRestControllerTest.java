@@ -1,7 +1,8 @@
-package com.milan.mvcreversestring.controller;
+package com.demo.mvcreversestring.controller;
 
+import com.demo.mvcreversestring.dto.request.ReverseStringRequestDTO;
 import com.fasterxml.jackson.core.JsonProcessingException;
-import com.milan.mvcreversestring.dto.request.ReverseStringRequestDTO;
+
 import org.junit.Before;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -34,6 +35,23 @@ class ReverseSentenceRestControllerTest extends AbstractTest {
         assertEquals(200, status);
         String content = mvcResult.getResponse().getContentAsString();
         assertEquals("{\"output\":\"Morning! Good\",\"success\":true,\"status\":\"OK\"}", content);
+    }
+    
+    @Test
+    public void testReverseWithInvalidRequest() throws Exception {
+        String uri = "/v1/reverse";
+        String requestBody = mapToJson(new ReverseStringRequestDTO(null));
+        System.out.println(requestBody);
+        MvcResult mvcResult = mvc.perform(
+                MockMvcRequestBuilders.post(uri)
+                        .contentType(MediaType.APPLICATION_JSON_VALUE)
+                        .content(requestBody)
+        ).andReturn();
+
+        int status = mvcResult.getResponse().getStatus();
+        assertEquals(400, status);
+        String content = mvcResult.getResponse().getContentAsString();
+        assertEquals("{\"output\":{\"input\":\"must not be null\"},\"success\":false,\"status\":\"BAD_REQUEST\"}", content);
     }
 
 }

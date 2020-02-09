@@ -1,4 +1,4 @@
-package com.milan.mvcreversestring.dto.request;
+package com.demo.mvcreversestring.dto.request;
 
 import lombok.*;
 

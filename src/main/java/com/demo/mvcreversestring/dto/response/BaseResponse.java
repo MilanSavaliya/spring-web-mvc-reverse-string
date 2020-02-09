@@ -1,4 +1,4 @@
-package com.milan.mvcreversestring.dto.response;
+package com.demo.mvcreversestring.dto.response;
 
 import lombok.*;
 import org.springframework.http.HttpStatus;

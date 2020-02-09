@@ -1,14 +1,15 @@
-package com.milan.mvcreversestring.controller;
+package com.demo.mvcreversestring.controller;
 
-import com.milan.mvcreversestring.dto.request.ReverseStringRequestDTO;
-import com.milan.mvcreversestring.dto.response.BaseResponse;
-import com.milan.mvcreversestring.service.ReverseSentenceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
+
+import com.demo.mvcreversestring.dto.request.ReverseStringRequestDTO;
+import com.demo.mvcreversestring.dto.response.BaseResponse;
+import com.demo.mvcreversestring.service.ReverseSentenceService;
 
 import javax.validation.Valid;
 import java.util.HashMap;

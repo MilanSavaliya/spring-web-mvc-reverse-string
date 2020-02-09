@@ -1,4 +1,4 @@
-package com.milan.mvcreversestring;
+package com.demo.mvcreversestring;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

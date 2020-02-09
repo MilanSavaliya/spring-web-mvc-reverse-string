@@ -1,4 +1,4 @@
-package com.milan.mvcreversestring;
+package com.demo.mvcreversestring;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

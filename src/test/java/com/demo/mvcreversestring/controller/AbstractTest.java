@@ -1,10 +1,11 @@
-package com.milan.mvcreversestring.controller;
+package com.demo.mvcreversestring.controller;
 
+import com.demo.mvcreversestring.MvcReverseStringApplication;
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.milan.mvcreversestring.MvcReverseStringApplication;
+
 import org.junit.jupiter.api.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
