@@ -1,14 +1,10 @@
 package com.demo.mvcreversestring.service;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-
-import com.demo.mvcreversestring.service.ReverseSentenceService;
-
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.AssertionsKt;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 class ReverseSentenceServiceTest {
 
